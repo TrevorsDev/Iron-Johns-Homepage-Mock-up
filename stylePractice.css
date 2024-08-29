@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border: darkred solid 3px;
+  height: 80px;
+  position: sticky;
+  top:0;
+  z-index: 100 ;
+  transition: all o.3s ease;
+}
+
+nav {
+  display: flex;
+  font-size: 20px;
+  border: darkblue solid 3px;
+  height: 80px;
+  background-color: black;
+  padding-right: 10px;
+}
+
+.header-image {
+  height: 100px;
+  transition: height 0.3s ease;
+  padding: 10px 10px;
+  position: absolute;
+}
+
+ ul {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+  align-items: center;
+  gap: 10px
+}
+
+li a {
+  text-decoration: none;
+  justify-content: space-between;
+  color: white;
+}
