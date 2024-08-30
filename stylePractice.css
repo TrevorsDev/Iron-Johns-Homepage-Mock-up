@@ -23,7 +23,6 @@ header {
   top: 0;
   z-index: 100;
   transition: all 0.2s ease;
-  position: absolute;
   width: 100%;
 }
 
@@ -46,7 +45,7 @@ nav {
 }
 
 ul {
-  
+
   display: flex;
   margin-left: auto;
   list-style-type: none;
@@ -63,43 +62,92 @@ li a {
 }
 
 .rotating-pics {
-  background-image: url('./assets/RotatingImage1.jpg');
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    /* Overlay */
+    url('./assets/RotatingImage1.jpg');
+  /* Background image */
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: auto;
+  width: 100%;
   position: relative;
   z-index: 1;
+}
+
+.rotating-pics h1 {
+  position: absolute;
+  /* Position relative to .rotating-pics */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Centering adjustment */
+  color: white;
+  /* Ensure text is readable */
+  font-size: 4rem;
+  /* Adjust as needed */
+  font-family: syne;
+  text-align: center;
+  /* Center text horizontally */
+  z-index: 100;
+  /* Ensure it's on top */
+  border: solid 1px white;
+  width: 100%;
+
 }
 
 main {
   display: flex;
   margin-top: 150px;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
 }
 
-#container {
-  border: solid rgb(0, 255, 247) 2px;
+#container1 {
+  /* border: solid rgb(0, 255, 247) 2px; */
   display: flex;
-  align-items:  center;
+  align-items: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 150px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    /* Overlay */
+    url('./assets/mission-image2.webp');
+  /* Background image */
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  border: solid 1px darkorange;
+  color: white;
+  font-family: syne;
 }
 
 #mission-image h2 {
   font-size: 50px;
-  font-family: syne;
   position: absolute;
-  bottom: 10.5%;
+  bottom: 15%;
   left: 50%;
-  transform: translateX(-50%); /* Shifts the element left by 50% of its own width */
+  transform: translateX(-50%);
+  /* Shifts the element left by 50% of its own width */
 }
 
 #mission-image {
-  border: solid red 2px;
-  
+  /* border: solid red 2px; */
+  margin-bottom: 50px;
+
 }
 
 #about-us {
   color: white;
+  font-family: syne;
+  font-size: 20px;
+  width: 70%;
+  margin-bottom: 150px;
+  border: solid 1px darkred;
+  line-height: 2.5;
 }
