@@ -2,41 +2,104 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 header {
-  border: darkred solid 3px;
   height: 80px;
   position: sticky;
-  top:0;
-  z-index: 100 ;
-  transition: all o.3s ease;
+  top: 0;
+  z-index: 100;
+  transition: all 0.2s ease;
+  position: absolute;
+  width: 100%;
 }
 
 nav {
   display: flex;
   font-size: 20px;
-  border: darkblue solid 3px;
   height: 80px;
-  background-color: black;
-  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: fixed;
 }
 
 .header-image {
-  height: 100px;
-  transition: height 0.3s ease;
-  padding: 10px 10px;
-  position: absolute;
+  max-height: 130px;
+  transition: height 0.2s ease;
+  padding: 0;
+  margin: 15px 40px;
+  border: solid 4px black;
+  border-radius: 5px;
 }
 
- ul {
+ul {
+  
   display: flex;
   margin-left: auto;
   list-style-type: none;
   align-items: center;
-  gap: 10px
+  gap: 40px;
 }
 
 li a {
   text-decoration: none;
+  font-family: syne;
   justify-content: space-between;
+  color: white;
+  padding-right: 40px;
+}
+
+.rotating-pics {
+  background-image: url('./assets/RotatingImage1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+#container {
+  border: solid rgb(0, 255, 247) 2px;
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  position: relative;
+}
+
+#mission-image h2 {
+  font-size: 50px;
+  font-family: syne;
+  position: absolute;
+  bottom: 10.5%;
+  left: 50%;
+  transform: translateX(-50%); /* Shifts the element left by 50% of its own width */
+}
+
+#mission-image {
+  border: solid red 2px;
+  
+}
+
+#about-us {
   color: white;
 }

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (scrollTop > lastScrollTop) {
       // Scrolling down
-      logo.style.height = '60px';
+      logo.style.height = '50px';
     } else {
       // Scrolling up
-      logo.style.height = '100px';
+      logo.style.height = '130px';
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
