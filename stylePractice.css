@@ -37,6 +37,7 @@ nav {
 
 .header-image {
   max-height: 130px;
+  min-height: 50px;
   transition: height 0.2s ease;
   padding: 0;
   margin: 15px 40px;
@@ -63,7 +64,7 @@ li a {
 
 .rotating-pics {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     /* Overlay */
     url('./assets/RotatingImage1.jpg');
   /* Background image */
@@ -78,7 +79,7 @@ li a {
 .rotating-pics h1 {
   position: absolute;
   /* Position relative to .rotating-pics */
-  top: 50%;
+  top: 60%;
   /* Center vertically */
   left: 50%;
   /* Center horizontally */
@@ -86,7 +87,7 @@ li a {
   /* Centering adjustment */
   color: white;
   /* Ensure text is readable */
-  font-size: 4rem;
+  font-size: 4.5rem;
   /* Adjust as needed */
   font-family: syne;
   text-align: center;
@@ -100,54 +101,75 @@ li a {
 
 main {
   display: flex;
-  margin-top: 150px;
+  margin-top: 120px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
+
 }
 
-#container1 {
+#mission-image-container {
   /* border: solid rgb(0, 255, 247) 2px; */
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.626)),
     /* Overlay */
-    url('./assets/mission-image2.webp');
+    url('./assets//mission-image2.jpg');
   /* Background image */
-  height: 100vh;
-  width: 100%;
+  height: 353px;
+  width: 1024px;
   background-size: cover;
   border: solid 1px darkorange;
   color: white;
   font-family: syne;
 }
 
-#mission-image h2 {
-  font-size: 50px;
+#mission-statement-container h2 {
+  border: solid 1px white;
+  width: 80%;
+  font-size: 45px;
   position: absolute;
-  bottom: 15%;
+  bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
   /* Shifts the element left by 50% of its own width */
 }
 
-#mission-image {
+#mission-statement-container {
   /* border: solid red 2px; */
   margin-bottom: 50px;
 
+}
+
+#button-wrap {
+  border: solid 1px white;
+  /*limiting the width of the container*/
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#button-wrap button {
+   /*makes the buttons equal width*/
+  background-color: darkred;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
 }
 
 #about-us {
   color: white;
   font-family: syne;
   font-size: 20px;
-  width: 70%;
-  margin-bottom: 150px;
+  width: 1030px;
+  margin-bottom: 120px;
   border: solid 1px darkred;
-  line-height: 2.5;
+  line-height: 2;
 }

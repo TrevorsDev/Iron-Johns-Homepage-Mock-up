@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+
   <title>Document</title>
 </head>
 
@@ -18,30 +20,27 @@
       <nav>
         <img class="header-image" src="./assets/IronJohnsLogo.png">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
           <li><a href="#">Brewery</a></li>
+          <li><a href="#">Locations</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <div id="search-container" style="display: none;">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-submit">Search</button>
+        </div>
       </nav>
     </header>
   </section>
 
   <main>
 
-    <div id="container1">
-      <div id="mission-image">
+    <div id="mission-image-container">
+      <div id="mission-statement-container">
         <h2 id="mission-statement">"Made from scratch, <br> Brewed with passion"</h2>
       </div>
-
-
-      <div id="button-wrap">
-        <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
-        <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
-      </div>
     </div>
-
 
     <section id="about-us">
       <div id="mission">
@@ -54,12 +53,18 @@
       </div>
     </section>
 
-    <section class="rotating-pics">
+    <div id="button-wrap">
+      <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
+      <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
+    </div>
+  </div>
+
+    <section class="rotating-pics2">
       <img src="./assets/brewery.png" alt="18th street brewery">
     </section>
     </section>
     <section id="special-offers">
-      <div id="container">
+      <div id="offer-container">
 
 
         <div class="offer-description">
