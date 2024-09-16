@@ -20,11 +20,26 @@
       <nav>
         <img class="header-image" src="./assets/IronJohnsLogo.png">
         <ul>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a>
+            <ul class="dropdown">
+              <li><a href="#">Beer Menu</a></li>
+              <li><a href="#">Food Menu</a></li>
+            </ul></li>
           <li><a href="#">Brewery</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Locations</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a>
+            <ul class="dropdown">
+              <li><a href="#">Party Reservations</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Ivestors</a></li>
+            </ul>
+          </li>
         </ul>
         <div id="search-container" style="display: none;">
           <input type="text" id="search-input" placeholder="Search...">
@@ -43,23 +58,32 @@
     </div>
 
     <section id="middle-wrapper">
-    <section id="about-us">
-      <div id="mission">
-        <p>At our core, we aim to create a welcoming space where guests can enjoy the perfect balance of amazing food made with quality ingredients, and exceptional craft beer while standing out from the rest. Whether it’s indulging in our hand-crafted pizzas or savoring our imaginative culinary offerings, we pride ourselves on delivering outstanding service in an inviting atmosphere, ideal for sharing with friends, family, coworkers, and the community. As proud members of the Tucson beer scene, we’re dedicated to representing our vibrant community, not just to locals but to the many travelers who visit our city. Our flagship brews, always on tap, showcase the best Tucson has to offer with a diverse selection including two IPAs, a Blonde, an Amber, two Stouts, a Hefeweizen, and our beloved Green Chili Ale. To keep things fresh, we also feature a rotating variety of seasonal beers throughout the year, ensuring there's always something new and exciting to enjoy.</p>
+      <section id="about-us">
+        <div id="mission">
+          <p>At our core, we aim to create a welcoming space where guests can enjoy the perfect balance of amazing food
+            made with quality ingredients, and exceptional craft beer while standing out from the rest. Whether it’s
+            indulging in our hand-crafted pizzas or savoring our imaginative culinary offerings, we pride ourselves on
+            delivering outstanding service in an inviting atmosphere, ideal for sharing with friends, family, coworkers,
+            and the community. As proud members of the Tucson beer scene, we’re dedicated to representing our vibrant
+            community, not just to locals but to the many travelers who visit our city. Our flagship brews, always on
+            tap, showcase the best Tucson has to offer with a diverse selection including two IPAs, a Blonde, an Amber,
+            two Stouts, a Hefeweizen, and our beloved Green Chili Ale. To keep things fresh, we also feature a rotating
+            variety of seasonal beers throughout the year, ensuring there's always something new and exciting to enjoy.
+          </p>
+        </div>
+      </section>
+
+      <div id="button-wrap">
+        <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
+        <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
       </div>
-    </section>
+      </div>
 
-    <div id="button-wrap">
-      <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
-      <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
-    </div>
-  </div>
+      <section class="rotating-pics2">
+        <img src="./assets/brewery.png" alt="18th street brewery">
+      </section>
 
-    <section class="rotating-pics2">
-      <img src="./assets/brewery.png" alt="18th street brewery">
-    </section>
-   
-    
+
       <div id="offer-container">
         <div class="offer-description">
           <h2>Birthday Love</h2>

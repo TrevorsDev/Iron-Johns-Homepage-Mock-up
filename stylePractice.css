@@ -47,8 +47,8 @@ nav {
 }
 
 nav li a:hover {
-  background-color: rgba(255, 255, 255, 0.749);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.888);
+  transition: background-color 0.8s ease, color 0.8s ease;
   color: black;
 }
 
@@ -78,7 +78,54 @@ li a {
   color: white;
   height: 100%;
   /* Ensure a elements fill the height of the li */
-  padding: 0 20px 0 20px;
+  padding: 0 50px 0 30px;
+}
+
+ul.dropdown {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  top: 80px;
+  visibility: hidden;
+  opacity: 0;
+  /* Initially invisible */
+  transform: translateY(-10px);
+  /* Start slightly above */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Slow transition */
+}
+
+li:hover>ul.dropdown {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Move to the final position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Transition for opacity and transform */
+}
+
+/* Style the dropdown items */
+ul.dropdown li a {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  border: transparent dashed 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
+  text-decoration: none;
+}
+
+ul.dropdown li a:hover {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 174, 0, 0.906);
+  border-left: 4px solid rgba(255, 174, 0, 0.906);
+  transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
 }
 
 .rotating-pics {
@@ -166,7 +213,7 @@ main {
   font-family: syne;
   font-size: 20px;
   width: 1030px;
-  margin-bottom: 50px;
+  margin: 50px auto 100px;
   border: solid 1px darkred;
   line-height: 2;
 }
@@ -198,7 +245,7 @@ main {
 }
 
 #button-wrap button:hover {
-  background-color: rgba(255, 174, 0, 0.906);
+  background-color: rgba(255, 255, 255, 0.749);
   color: darkred;
   border: 2px solid darkred;
   transition: background-color 0.3s ease, color 0.3s ease;
