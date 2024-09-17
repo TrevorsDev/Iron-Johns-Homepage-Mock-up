@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: syne;
+}
+
+@font-face {
+  font-family: Bronco;
+  src: url('./assets/fonts/BroncoPersonalUse.ttf');
 }
 
 body {
@@ -29,7 +35,8 @@ header {
 
 nav {
   display: flex;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 600;
   height: 80px;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
@@ -42,7 +49,7 @@ nav {
   transition: height 0.2s ease;
   padding: 0;
   margin: 15px 40px;
-  border: solid 1px white;
+  /* border: solid 1px white; */
   border-radius: 5px;
 }
 
@@ -71,8 +78,10 @@ li {
 
 li a {
   display: flex;
+  font-family: Bronco;
+  letter-spacing: 3px;
+  font-size: 18px;
   text-decoration: none;
-  font-family: syne;
   justify-content: space-between;
   align-items: center;
   color: white;
@@ -97,6 +106,7 @@ ul.dropdown {
 }
 
 li:hover>ul.dropdown {
+  max-height: 45px;
   display: block;
   visibility: visible;
   opacity: 1;
@@ -118,6 +128,7 @@ ul.dropdown li a {
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
   text-decoration: none;
+  font-size: 15px;
 }
 
 ul.dropdown li a:hover {
@@ -126,6 +137,26 @@ ul.dropdown li a:hover {
   color: rgba(255, 174, 0, 0.906);
   border-left: 4px solid rgba(255, 174, 0, 0.906);
   transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
+}
+
+#online-btn {
+  border: 2px solid white;
+  padding: 15px 25px 15px 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: Bronco;
+  font-size: 18px;
+  margin: 0 20px 0 20px;
+  transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
+  letter-spacing: 2px;
+}
+
+#online-btn:hover {
+  box-sizing: border-box;
+  background-color: rgba(255, 174, 0, 0.906);
+  color: black;
+  border: 2px solid transparent;
+  font-weight:500;
 }
 
 .rotating-pics {
@@ -155,7 +186,6 @@ ul.dropdown li a:hover {
   /* Ensure text is readable */
   font-size: 4.5rem;
   /* Adjust as needed */
-  font-family: syne;
   text-align: center;
   /* Center text horizontally */
   z-index: 100;
@@ -170,11 +200,36 @@ ul.dropdown li a:hover {
 
 main {
   display: flex;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   flex-direction: column;
   align-items: center;
   text-align: center;
 
+}
+
+#middle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1c1c;
+  width: 100%;
+}
+
+#about-us {
+  color: white;
+  font-family: syne;
+  font-size: 20px;
+  width: 1030px;
+  margin: 50px auto 100px;
+  border: solid 1px darkred;
+  line-height: 2;
+}
+
+#mission h2 {
+  font-family: Bronco;
+  font-size: 50px;
+  letter-spacing: 4px;
 }
 
 #mission-image-container {
@@ -183,7 +238,8 @@ main {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-bottom: 120px;
+  margin: 120px 0 120px 0;
+  background-color: black;
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.626)),
     /* Overlay */
@@ -208,16 +264,6 @@ main {
   /* Shifts the element left by 50% of its own width */
 }
 
-#about-us {
-  color: white;
-  font-family: syne;
-  font-size: 20px;
-  width: 1030px;
-  margin: 50px auto 100px;
-  border: solid 1px darkred;
-  line-height: 2;
-}
-
 #button-wrap {
   /*limiting the width of the container*/
   border: 2px solid transparent;
@@ -236,9 +282,9 @@ main {
   border-radius: 5px;
   /* Add a transparent border initially */
   color: white;
-  font-family: syne;
+  font-family: Bronco;
+  letter-spacing: 2px;
   font-size: 20px;
-  font-weight: 500;
   padding: 20px 40px;
   cursor: pointer;
   box-sizing: border-box;
@@ -251,14 +297,7 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#middle-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #1e1c1c;
-  width: 100%;
-}
+
 
 footer {
   background-color: black;
