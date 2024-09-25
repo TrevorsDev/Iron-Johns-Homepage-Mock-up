@@ -4,64 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./stylePractice.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
+
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img class="header-image" src="./assets/IronJohnsLogo.png" alt="Iron Johns Logo">
-      <ul>
-        <li><a href="#">Menu</a>
-        </li>
-        <li><a href="#">Brewery</a></li>
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <section class="rotating-pics">
+    <h1>Craft Beer - Pizza - Burgers</h1>
+    <header>
+      <nav>
+        <img class="header-image" src="./assets/IronJohnsLogo.png">
+        <ul>
+          <li><a href="#">Menu</a>
+            <ul class="dropdown">
+              <li><a href="#">On Tap Menu</a></li>
+              <li><a href="#">Food Menu</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Brewery</a></li>
+          <li><a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Locations</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a>
+            <ul class="dropdown">
+              <li><a href="#">Party Reservations</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Investors</a></li>
+            </ul>
+            <li><button id="online-btn">Order Online</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
 
   <main>
 
-    <section class="rotating-pics">
-      <img src="./assets/brewery.png" alt="18th street brewery">
+    <section id="special-funnel">
+      <section id="img-&-description">
+        <img src="" alt="assets">
+      </section>
+
     </section>
 
-    <section id="about-us">
-      <div id="container">
-        <div id="mission-image">
-          <img src="./assets/Mission-image.jpg" alt="A beer being poured ontap">
-        </div>
+    <section id="middle-wrapper">
+      <section id="about-us">
         <div id="mission">
-          <h2>"Made from scratch, <br> Brewed with passion"</h2>
-          <p>Our vision is simple – balance approachable food and beer while still standing out from the other options
-            around. From our craft pizza and craft beer to our exceptional service and imaginative culinary options, we
-            strive to present a welcoming environment for guests to share with friends, family, coworkers, and
-            community.
-            And as longtime members of the Tucson beer scene, we hope to properly represent our shared community to the
-            many travelers visiting our great city.</p>
+          <h2>Welcome to Iron Johns</h2>
+          <p>At our core, we aim to create a welcoming space where guests can enjoy the perfect balance of amazing food, and exceptional craft beer while standing out from the rest. Whether it’s
+            indulging in our hand-crafted pizzas or savoring our imaginative culinary offerings, we pride ourselves on
+            delivering outstanding service in an inviting atmosphere, ideal for sharing with friends, family, coworkers,
+            and the community. As proud members of the Tucson beer scene, we’re dedicated to representing our vibrant
+            community, not just to locals but to the many travelers who visit our city. Our flagship brews, always on
+            tap, showcase the best Tucson has to offer with a diverse selection including two IPAs, a Blonde, an Amber,
+            two Stouts, a Hefeweizen, and our beloved Green Chili Ale. To keep things fresh, we also feature a rotating
+            variety of seasonal beers throughout the year, ensuring there's always something new and exciting to enjoy.
+          </p>
         </div>
-        <div id="button-wrap">
-          <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Coldie Menu</a>
-          <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Foodie Menu</a>
-          <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
-          <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
+      </section>
+    </section>
+      <div id="mission-image-container">
+        <div id="mission-statement-container">
+          <h2 id="mission-statement">"Made from scratch, <br> Brewed with passion"</h2>
         </div>
       </div>
-    </section>
 
-    <section class="rotating-pics">
-      <img src="./assets/brewery.png" alt="18th street brewery">
-    </section>
+      <div id="button-wrap">
+        <button type="button" class="btn btn-primary btn-lg">Coldie Menu</button>
+        <button type="button" class="btn btn-primary btn-lg">Foodie Menu</button>
+      </div>
+      </div>
 
-    <section id="special-offers">
-      <div id="container">
+      <section class="rotating-pics2">
+        <img src="./assets/brewery.png" alt="18th street brewery">
+      </section>
 
 
+      <div id="offer-container">
         <div class="offer-description">
           <h2>Birthday Love</h2>
           <h3>Free Pizza on Us!</h3>
@@ -69,7 +97,7 @@
           <button type="button" class="btn btn-primary btn-sm">Sign Up</button>
         </div>
       </div>
-    </section>
+    
   </main>
 
   <footer>
@@ -89,13 +117,10 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Contact</a></li>
-          <div id="search-container" style="display: none;">
-            <input type="text" id="search-input" placeholder="Search...">
-            <button id="search-submit">Search</button>
-          </div>
         </ul>
         <p>&copy; 202
   </footer>
+  <script src="./style.js"></script>
 </body>
 
 </html>

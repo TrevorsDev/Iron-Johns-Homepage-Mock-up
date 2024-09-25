@@ -222,7 +222,7 @@ main {
   font-size: 20px;
   width: 1030px;
   margin: 50px auto 100px;
-  border: solid 1px darkred;
+  /* border: solid 1px darkred; */
   line-height: 2;
 }
 
@@ -248,13 +248,13 @@ main {
   height: 353px;
   width: 1024px;
   background-size: cover;
-  border: solid 1px darkorange;
+  /* border: solid 1px darkorange; */
   color: white;
   font-family: syne;
 }
 
 #mission-statement-container h2 {
-  border: solid 1px white;
+  /* border: solid 1px white; */
   width: 80%;
   font-size: 45px;
   position: absolute;
