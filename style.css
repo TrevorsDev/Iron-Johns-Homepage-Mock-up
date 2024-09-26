@@ -159,7 +159,7 @@ ul.dropdown li a:hover {
   font-weight:500;
 }
 
-.rotating-pics {
+#rotating-pics {
   background:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     /* Overlay */
@@ -173,7 +173,7 @@ ul.dropdown li a:hover {
   z-index: 1;
 }
 
-.rotating-pics h1 {
+#rotating-pics h1 {
   position: absolute;
   /* Position relative to .rotating-pics */
   top: 60%;
@@ -204,7 +204,41 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
 
+#img-and-description {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  max-height: 500px;
+  max-width: 1000px;
+}
+
+#seasonal {
+  width: 50%;
+  height: auto;
+}
+
+#description-box {
+ display: flex;
+ flex-direction: column;
+ line-height: 40px;
+ background-color: orange;
+ width: 50%;
+ height: 100%;
+ padding: 35px;
+ justify-content: center;
+ align-items: center;
+}
+
+#description-box h2 {
+  color: white;
+  font-size: 35px;
+}
+
+#description-box p {
+  color: white;
+  font-size: 20px;
 }
 
 #middle-wrapper {
@@ -243,7 +277,7 @@ main {
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.626)),
     /* Overlay */
-    url('./assets//mission-image2.jpg');
+    url('./assets/mission-image2.jpg');
   /* Background image */
   height: 353px;
   width: 1024px;
