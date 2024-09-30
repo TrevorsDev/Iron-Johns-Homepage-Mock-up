@@ -162,7 +162,7 @@ ul.dropdown li a:hover {
 
 #rotating-pics {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)),
     /* Overlay */
     url('./assets/RotatingImage1.jpg');
   /* Background image */
@@ -199,58 +199,13 @@ ul.dropdown li a:hover {
 
 }
 
+/*This main content begins with IronJohns welcome heading and description*/
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-#img-and-description {
-  display: flex;
-  max-height: 500px;
-  max-width: 100%;
-  margin: 120px auto 120px auto;
-}
-
-#seasonal {
-  width: 500px;
-  height: auto;
-}
-
-#description-box {
- display: flex;
- flex-direction: column;
- line-height: 30px;
- background-color: orange;
- width: 10000px;
- max-height: 100%;
- padding: 35px;
- justify-content: center;
- align-items: center;
-}
-
-#seasonal-logo {
-  position: absolute;
-  transform: translateX(675%) translateY(30%);
-  /* Shifts the element left by 100% of its own width and 50% of its height*/
-  height: 15%;
-}
-
-#seasonal-pour {
-  width: 498px;
-}
-
-#description-box h2 {
-  color: white;
-  font-size: 35px;
-  line-height: 35px;
-  margin-bottom: 40px;
-}
-
-#description-box p {
-  color: white;
-  font-size: 20px;
 }
 
 #middle-wrapper {
@@ -267,7 +222,7 @@ main {
   font-family: syne;
   font-size: 20px;
   width: 1030px;
-  margin: 50px auto 100px;
+  margin: 120px auto 60px;
   /* border: solid 1px darkred; */
   line-height: 2;
 }
@@ -276,6 +231,107 @@ main {
   font-family: Bronco;
   font-size: 50px;
   letter-spacing: 4px;
+}
+
+#img-and-description {
+  display: flex;
+  max-height: 500px;
+  max-width: 100%;
+  margin: 60px auto 120px auto;
+}
+
+#seasonal {
+  width: 500px;
+  height: auto;
+}
+
+#description-box {
+ display: flex;
+ flex-direction: column;
+ line-height: 30px;
+ background-color: darkred;
+ width: 10000px;
+ max-height: 100%;
+ padding: 35px;
+ justify-content: center;
+ align-items: center;
+}
+
+#seasonal-logo {
+  position: absolute;
+  transform: translateX(675%) translateY(20%);
+  /* Shifts the element left by 100% of its own width and 50% of its height*/
+  height: 15%;
+}
+
+#seasonal-pour {
+  width: 498px;
+}
+
+#description-box h2 {
+  color: white;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  width: 90%;
+  font-family: Bronco;
+  letter-spacing: 4px;
+}
+
+#description-box p {
+  color: white;
+  font-size: 18px;
+}
+
+/*Monthly food items containers*/
+
+#monthlys {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  background-color: red;
+  justify-content: center;
+}
+
+#pizza-wrapper, #burger-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: aqua;
+  align-items: center;
+}
+
+#pizza-wrapper {
+  
+  
+  
+  
+  margin-bottom: 20px ;
+}
+
+#monthly-pizza-des {
+  height: 100%;
+  width: 37.5%;
+  background-color: rgb(0, 255, 128);
+  display: flex;
+  justify-content: flex-start;
+}
+
+#burger-wrapper {
+
+  background-color: rgb(0, 255, 128);
+  justify-content: flex-end;
+  
+}
+
+#monthly-burger-des {
+  height: 100%;
+  width: 37.5%;
+  background-color: aqua;
+  display: flex;
+  align-items: flex-end;
 }
 
 #mission-image-container {
@@ -302,7 +358,9 @@ main {
 #mission-statement-container h2 {
   /* border: solid 1px white; */
   width: 80%;
-  font-size: 45px;
+  font-family: Bronco;
+  font-size: 50px;
+  letter-spacing: 4px;
   position: absolute;
   bottom: 0%;
   left: 50%;
