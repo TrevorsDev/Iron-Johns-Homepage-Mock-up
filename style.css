@@ -16,7 +16,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #232323;
 }
 
 img {
@@ -64,7 +64,6 @@ ul {
   margin-left: auto;
   list-style-type: none;
   align-items: center;
-  /* gap: 40px; */
   height: 100%;
 }
 
@@ -134,8 +133,8 @@ ul.dropdown li a {
 ul.dropdown li a:hover {
   display: flex;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 174, 0, 0.906);
-  border-left: 4px solid rgba(255, 174, 0, 0.906);
+  color: #F99D2C;
+  border-left: 4px solid #F99D2C;
   transition: background-color 0.3s ease, color 0.8s ease, border-color 0.8s ease;
 }
 
@@ -154,7 +153,7 @@ ul.dropdown li a:hover {
 
 #online-btn:hover {
   box-sizing: border-box;
-  background-color: rgba(255, 174, 0, 0.906);
+  background-color: #F99D2C;
   color: black;
   border: 2px solid transparent;
   font-weight:500;
@@ -213,7 +212,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #181818;
   width: 100%;
 }
 
@@ -243,9 +242,12 @@ main {
 /*An add on for responsiveness purposes would be to add flex scaling properties: flex-grow, flex-shrink, and flex-basis*/
 #seasonal-wrapper {
   display: flex;
-  max-height: 500px;
+  max-height: 800px;
   max-width: 100%;
-  margin-bottom: 200px;
+  padding: 100px 20px 100px 20px;
+  background-color: rgb(139, 0, 0);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white
 }
 
 #seasonal-img {
@@ -257,7 +259,7 @@ main {
  display: flex;
  flex-direction: column;
  line-height: 30px;
- background-color: darkred;
+ background-color: transparent;
  width: 10000px;
  max-height: 100%;
  padding: 35px;
@@ -296,21 +298,18 @@ main {
 #monthlys {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 1080px;
-  background-color: rgb(0, 0, 0);
-  justify-content: center;
-  padding: 0 50px 0 50px
-  
+  /* width: 100%; */
+  /* justify-content: center; */
+  padding: 100px 20px 100px 20px;
+  /* background-color: #232323; */
 }
 
 .monthly-item {
-  width: 100%;
-  height: 50%;
+  flex: 1;
   display: flex;
   justify-content: flex-start;
-  background-color: transparent;
   align-items: center;
+  overflow: hidden;
 }
 
 #pizza-wrapper {
@@ -318,15 +317,16 @@ main {
 }
 
 .monthly-item-img {
-  width: 50%;
-  padding: 0 80px 0 80px
+  width: 700px;
+  padding: 0 80px;
 }
+
+
 
 .monthly-item-des {
   height: 100%;
   width: 50%;
   color: white;
-  background-color: transparent;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -350,7 +350,6 @@ main {
 }
 
 #burger-wrapper {
-  background-color: black;
   justify-content: flex-end;
   
 }
@@ -358,30 +357,29 @@ main {
 #monthly-burger-des {
   height: 100%;
   width: 50%;
-  background-color: transparent;
   display: flex;
   align-items: flex-end;
 }
 
+#monthly-burger-des p {
+  text-align: right; /* Optional: Align text inside the container */
+  width: 80%
+}
+
 #mission-image-container {
-  /* border: solid rgb(0, 255, 247) 2px; */
   display: flex;
   align-items: center;
-  flex-direction: column;
   position: relative;
-  margin: 120px 0 120px 0;
-  background-color: black;
+  margin: 100px 0 100px 0;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.626)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     /* Overlay */
-    url('./assets/mission-image2.jpg');
+    url("./assets/IJBC_18th_hangout.jpg");
   /* Background image */
-  height: 353px;
-  width: 1024px;
+  height: 750px;
+  width: 100%;
   background-size: cover;
-  /* border: solid 1px darkorange; */
   color: white;
-  font-family: syne;
 }
 
 #mission-statement-container h2 {
