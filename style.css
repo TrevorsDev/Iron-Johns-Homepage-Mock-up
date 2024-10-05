@@ -242,18 +242,26 @@ main {
 /*An add on for responsiveness purposes would be to add flex scaling properties: flex-grow, flex-shrink, and flex-basis*/
 #seasonal-wrapper {
   display: flex;
-  max-height: 800px;
+  max-height: 500px;
   max-width: 100%;
-  padding: 100px 20px 100px 20px;
+  padding: 50px 30px 50px 30px;
   background-color: rgb(139, 0, 0);
   border-top: 2px solid white;
   border-bottom: 2px solid white
 }
 
-#seasonal-img {
+.seasonal-brew {
+  flex-grow: 1;
+  /* margin-right: 30px; */
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* #seasonal-img {
   width: 500px;
   height: auto;
-}
+} */
 
 #description-box {
  display: flex;
@@ -267,16 +275,9 @@ main {
  align-items: center;
 }
 
-#seasonal-logo {
-  position: absolute;
-  transform: translateX(675%) translateY(20%);
-  /* Shifts the element left by 100% of its own width and 50% of its height*/
-  height: 15%;
-}
-
-#seasonal-pour {
+/* #seasonal-pour {
   width: 498px;
-}
+} */
 
 #description-box h2 {
   color: white;
@@ -309,7 +310,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #pizza-wrapper {
@@ -317,11 +318,10 @@ main {
 }
 
 .monthly-item-img {
-  width: 700px;
+  height: 550px;
   padding: 0 80px;
+  
 }
-
-
 
 .monthly-item-des {
   height: 100%;
