@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background-color: #232323;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+#online-btn {
+  background-color: #F99D2C;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#rotating-pics {
+  background: url('./assets/RotatingImage1.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#rotating-pics h1 {
+  font-size: 3rem;
+}
+
+#about-us {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #2D2D2D;
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  color: #F99D2C;
+}
+
+#about-us p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#seasonal-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #1E1E1E;
+}
+
+.seasonal-brew {
+  max-width: 300px;
+}
+
+#description-box {
+  max-width: 400px;
+  text-align: center;
+}
+
+#description-box h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#monthly-specials {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2D2D2D;
+}
+
+.special-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.special-item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #181818;
+  padding: 50px;
+}
+
+footer div {
+  max-width: 300px;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: #F99D2C;
+  text-decoration: none;
+}

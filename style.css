@@ -5,6 +5,14 @@
   font-family: syne;
 }
 
+.secondary-headers {
+  font-family: Bronco;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+
 @font-face {
   font-family: Bronco;
   src: url('./assets/fonts/BroncoPersonalUse.ttf');
@@ -212,7 +220,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #181818;
+  background-color: rgb(139, 0, 0);
   width: 100%;
 }
 
@@ -293,6 +301,25 @@ main {
   color: white;
   font-size: 18px;
 }
+
+/*Flagship beers*/
+#flagship-wrapper {
+  background-color: rgb(139, 0, 0);
+  padding: 50px;
+}
+
+#flagship-beers {
+  /* padding-top: 50px; */
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: rgb(139, 0, 0); 
+}
+
+#flagship-beers img {
+  padding: 10px
+}
+
 
 /*Monthly food items containers*/
 
