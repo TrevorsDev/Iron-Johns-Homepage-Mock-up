@@ -33,19 +33,19 @@ img {
 }
 
 header {
-  height: 80px;
+  /* height: 40px; */
   position: sticky;
-  top: 0;
+  /* top: 0; */
   z-index: 100;
   transition: all 0.2s ease;
-  width: 100%;
+  /* width: 100%; */
 }
 
 nav {
   display: flex;
   font-size: 17px;
-  font-weight: 600;
-  height: 80px;
+  font-weight: 500;
+  height: 70px;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   position: fixed;
@@ -71,11 +71,12 @@ ul {
   display: flex;
   margin-left: auto;
   list-style-type: none;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
 }
 
 li {
+  /* display flex and align items centers order online button vertically */
   display: flex;
   align-items: center;
   /* Center items vertically */
@@ -94,7 +95,7 @@ li a {
   color: white;
   height: 100%;
   /* Ensure a elements fill the height of the li */
-  padding: 0 50px 0 30px;
+  padding: 0 40px 0 30px;
 }
 
 ul.dropdown {
@@ -102,7 +103,7 @@ ul.dropdown {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  top: 80px;
+  top: 70px;
   visibility: hidden;
   opacity: 0;
   /* Initially invisible */
