@@ -221,7 +221,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(139, 0, 0);
+  /* background-color: rgb(139, 0, 0); */
   width: 100%;
 }
 
@@ -253,8 +253,8 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 50px 30px 50px 30px;
-  background-color: rgb(139, 0, 0);
+  padding: 50px 0px 50px 0px;
+  /* background-color: rgb(139, 0, 0); */
   border-top: 2px solid white;
   
 }
@@ -262,7 +262,14 @@ main {
 #seasonal-wrapper {
   display: flex;
   flex-direction: row;
-}
+  
+  }
+
+  #testing {
+    background-color:rgb(139, 0, 0);
+    width: 100%;
+    padding: 20, 20px, 20, 20px;
+  }
 
 .seasonal-brew {
   flex-grow: 1;
@@ -302,7 +309,7 @@ main {
 #flagship-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgb(139, 0, 0);
+  /* background-color: rgb(139, 0, 0); */
   padding: 50px;
 }
 
@@ -311,7 +318,7 @@ main {
   display: flex;
   flex-direction: row;
  color: white;
-  background-color: rgb(139, 0, 0); 
+  /* background-color: rgb(139, 0, 0);  */
 }
 
 .beer-item {
@@ -325,6 +332,7 @@ main {
 .beer-item img {
   border-radius: 10px;
 }
+
 
 
 /*Monthly food items containers*/
